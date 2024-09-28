@@ -1,0 +1,16 @@
+{
+  "name": "mymoshalallowance",
+  "version": "1.0.0",
+  "main": "documents.js",
+  "scripts": {
+    "start": "node scripts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "firebase": "^10.12.5"
+  },
+  "description": ""
+}

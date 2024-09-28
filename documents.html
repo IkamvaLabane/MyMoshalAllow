@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documents</title>
+    <link rel="stylesheet" href="document.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo-container">
+          <span class="menu-btn" onclick="toggleNav()">&#9776;</span>
+          <img src="images/Morshal.jpg" alt="Moshal Logo" class="logo" />
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">About Us</a></li>
+          <li class="nav-item"><a href="#">Our Services</a></li>
+          <li class="nav-item"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()"
+          >&times;</a
+        >
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Documents</a>
+        <a href="#">Query</a>
+        <a href="#">Notification</a>
+        <a href="#">Browse</a>
+      </div>
+      <section class="documents-section">
+        <h1>Documents</h1>
+        <p class="subtitle">Submit your respective documents</p>
+        <div class="document-cards">
+          <div class="card">
+            <h2>Submit your fee statement</h2>
+            <h3>Select a File</h3>
+            <input type="file" id="fileInput1" accept=".pdf" required />
+            <div id="fileInfo1"></div>
+            <button class="submit-button" type="submit">Submit</button>
+          </div>
+          <div class="card2">
+            <h2>Submit proof of Funding</h2>
+            <h3>Select a File</h3>
+            <input type="file" id="fileInput2" accept=".pdf" />
+            <div id="fileInfo2"></div>
+            <button class="submit-button" type="submit">Submit</button>
+          </div>
+        </div>
+        <div class="notice">
+          <h3>Important Notice:</h3>
+          <p>
+            It is essential that you submit a document that's up to date and
+            valid. Documents that are not valid or not up to date will result in
+            miscalculation of allowance.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p>
+        Designed and Developed by INFOSYNC &copy; Moshal program 2024 All rights
+        reserved
+      </p>
+    </footer>
+    <script>
+      function toggleNav() {
+        const sidenav = document.getElementById("mySidenav");
+        const body = document.body;
+        if (sidenav.style.width === "250px") {
+          sidenav.style.width = "0";
+          body.style.marginLeft = "0";
+        } else {
+          sidenav.style.width = "250px";
+          body.style.marginLeft = "250px";
+        }
+      }
+    </script>
+    <script type="module" src="documents.js"></script>
+  </body>
+</html>
